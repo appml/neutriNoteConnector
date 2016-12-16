@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+### neutriNote Connector User Guide
 
-You can use the [editor on GitHub](https://github.com/appml/neutriNoteConnector/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+1. [Getting Started](#started)
+1. [Tasker Support](#tasker)
+1. [Support](#support)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### <a name="started">Getting Started</a>
+**neutriNote Connector** is the easiest way to sync **neutriNote** with **Dropbox**.  Just follow these steps:
 
-### Markdown
+1. Point to **Local Repository** of **neutriNote** under **Settings**.
+1. Link to **Dropbox** using the button on the main screen.
+1. Enable sync by going to your device's Settings, click **neutriNote Connector** under **Accounts**, and check the checkbox.  
+    * The first sync would take a while to finish depending on the quantity of notes.  It also may reset the last modified time of notes.
+    * If the above steps fail to trigger sync, tap **Resync All** from the menu.
+    * Once the first sync completes, you can manual sync anytime by doing a pull-to-refresh from the main screen of **neutriNote**.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### <a name="tasker">Tasker Support</a>
+The syncing of **neutriNote Connector** can also alternatively be triggered by Tasker.  Simply create a new Tasker task similar to the one below:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+A1: Send Intent [ 
+Action:com.appmindlab.connector.ACTION_REQUEST_SYNC 
+Cat:None 
+Mime Type: 
+Data: 
+Extra: 
+Extra: 
+Extra: Package:com.appmindlab.connector
+Class: Target:Broadcast Receiver ] 
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### <a name="support">Support</a>
+What's next?  Join [Google+ community](https://plus.google.com/u/0/communities/117565395761503074053) to keep up with the app's latest development.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/appml/neutriNoteConnector/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
