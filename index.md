@@ -13,7 +13,7 @@
     * The first sync would take a while to finish depending on the quantity of notes.  It also may reset the last modified time of notes.
     * If the above steps fail to trigger sync, tap **Resync All** from the menu.
     * Once the first sync completes, you can manual sync anytime by doing a pull-to-refresh from the main screen of **neutriNote**.
-    * For Android 6 or above, **Battery Optimization** under device settings will override in-app sync preferences.
+    * For Android 6 or above, be sure to disable **Battery Optimization** for this app under system settings.
 
 #### <a name="tasker">Tasker Support</a>
 The syncing of **neutriNote Connector** can also alternatively be triggered by Tasker.  Simply create a new Tasker task similar to the one below:
